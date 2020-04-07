@@ -12,13 +12,18 @@
    <meta charset="utf-8" />
    <meta name="keywords" content="Portfolio, Swanson, WD1A" />
    <title>Portfolio - Bill Swanson - Home</title>
+   <link href="reset.css" rel="stylesheet" />
+   <link href="normalize.css" rel="stylesheet" />
+   <link href="main.css" rel="stylesheet" />
+
 
 </head>
 
 <body>
+	<div id="wrapDiv">
    <header>
-	<h1>Home Page</h1>
-      <img src="bill.png" alt="Picture of Bill" />
+	<h1 id="top">Home Page</h1>
+      <a href="resume.html"><img src="bill.png" alt="Picture of Bill" /></a>
       <nav class="horizontalNavigation">
          <ul>
             <li><a href="home.html" title="Back to the Home Page">Home</a></li>
@@ -45,25 +50,36 @@
 	
    </section>
    
+   <aside>
+   <h2>Endorsements</h2>
+   <blockquote class="asideText">"You know, I always learn something new when I work with you, Bill."<br/> <i>-Randy C.</i></blockquote>
+   </aside>
+   
+   <div class="clearBoth">
    <p>This Portfolio Site hopes to encourage the reader to connect regarding common interests that we share.</p>
 	<p>Some of my interests are Web Design, Machinery Controls, Node-Red, and Project Management.</p>
 	<p>I also have intests outside of tech/STEM that include Hockey and Tae Kwon Do.</p>
+	
+	<p><a href="mailto:wswanson@students.ntc.edu?subject=How can I get involved in your cool projects">
+		<img src="outlook.png" width="40px"/></a>
+		<a href="https://www.linkedin.com/in/bill-swanson-3597a8113/"><img src="IN.png"/></a></p>
+   </div>
    
-   <aside>
-   <h2>Endorsements</h2>
-   <blockquote>"You know, I always learn something new when I work with you, Bill."<br/> <i>-Randy C.</i></blockquote
-   </aside>
    
    <footer>
       
          
       <section id="contactInfo">
          
-         <p>1000 W. Campus Dr., Wausau, WI 54401 <br />
-            715.675.3331 </p>
-			<p>© 2020 Bill Swanson</p>
-         
+         <address>1000 W. Campus Dr., Wausau, WI 54401 
+            715.675.3331 
+			© 2020 Bill Swanson</address>
+			
+   
+         <a class="gotoTop" href="#top">Go To Top</a>
       </section>
    </footer>
+   
+   </div>
 </body>
 </html>
