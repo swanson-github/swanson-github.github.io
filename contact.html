@@ -15,6 +15,8 @@
    <link href="reset.css" rel="stylesheet" />
    <link href="normalize.css" rel="stylesheet" />
    <link href="main.css" rel="stylesheet" />
+   
+   <script src="form_action.js"></script>
 
 </head>
 
@@ -43,8 +45,42 @@
    
       <h2>Coming Soon: Twitter, Facebook, Instagram, Snap Chat</h2> (not really)
 
-	<br/><br/><br/><br/><br/><br/>
-   
+	<br/><br/>
+	
+	<form id="myForm" onsubmit="myAlertBox()">
+		<fieldset id="businessInformation">
+		<legend>Business Information:</legend>
+			<label for="company">Company:</label>
+			<input type="text" id="company" name="company" required><br/><br/>
+			<label for="fname">Contact First name:</label>
+			<input type="text" id="fname" name="fname" required><br/><br/>
+			<label for="lname">Contact Last name:</label>
+			<input type="text" id="lname" name="lname" required><br/><br/>
+			
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city" value="Madison"><br/><br/>
+			
+			<label for="state">State:</label>
+			<input type="text" id="state" name="state" value="WI"><br/><br/>
+			
+			<label for="zip">Zip:</label>
+			<input type="text" id="zip" name="zip" placeholder="53703"><br/><br/>
+			
+			<label for="phone">Phone Number:</label>
+			<input type="text" id="phone" name="phone" placeholder="608-555-1212"><br/><br/>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required><br/><br/>
+			
+			<label for="comments">Comments:</label>
+			<textarea id="comments" name="comments" rows="4" cols="30">Leave your comments here.</textarea>
+			<br/><br/>
+			
+			
+			<input type="submit" value="Submit" id="submit" name="submit">
+		</fieldset>
+	</form>
+ 
    <footer>
       
          

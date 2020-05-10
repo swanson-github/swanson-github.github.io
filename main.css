@@ -18,7 +18,8 @@ html {
 }
 
 body {
-   background-color: white;
+	font-family: Verdana, Geneva, sans-serif;
+   background-color: rgb(255,255,240);
    box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
                inset rgb(51, 21, 21) 0px 0px 40px;
    border-left: 3px solid rgb(51, 51, 51);
@@ -37,25 +38,29 @@ div#wrapDiv {
 }
 
 h1 {color: rgb(1, 44, 98); font-size: 1.5em;}
-h2 {color: rgb(1, 44, 98);}
+h2:not(aside h2) {color: rgb(1, 44, 98); background-color: rgb(255,255,240);}
 
 
 /* Aside Styles Section */
 aside {
 	background-color: rgb(212, 69, 0);
-	float: right;
+	
+	position: absolute;
+    top: 280px;
+	right: 230px;
+	
    border: 1px solid rgb(153, 0, 153);
    border-radius: 20px;
    box-shadow: inset rgb(131, 131, 131) 5px 5px 10px,  inset rgb(131, 131, 131) -5px -5px 10px,  rgb(51, 51, 51) -5px 5px 25px;
    margin: 15px 0px;
-   width: 30%;
+   width: 20%;
    
    display:block;
 }
 aside > h2 {color: white; margin: 1rem;}
 aside blockquote {color: white; margin: 1rem;}
 
-
+nav {float: left;}
 
 /* Section Styles Section */
 section#leftColumn {float:left; width:60%;}
@@ -65,21 +70,6 @@ section ul {
  list-style-image: none;
 }
 
-/* Tables Styles Section */
-table { 
-	border-collapse: collapse;
-	width: 60%;
-	}
-table td{
-	padding: 5px;
-	margin: 5px;
-	color: rgb(0, 68, 124);
-	text-align: center;
-}
-table th{
-	background-color: #dddddd;
-	color: rgb(212, 69, 0);
-}
 
 /* Footer Styles Section */
 footer {
@@ -126,11 +116,57 @@ footer address {font-size: .75em; text-align: center; color: white;}
 
 
 .gotoTop {float: right;}
-.asideText {font-size .75em;}
+p.asideText {font-size: .75em; font-style: italic; color: white; margin: 1rem;}}
 .clearBoth {clear:both;}
 .activePage a {background-color: rgb(212, 69, 0); color: white;}
 .activePage li {background-color: rgb(212, 69, 0); color: white;}
 
-.home {border: 1px solid black;}
 
 
+/* Tables Styles Section */
+table.home {
+	border: 1px solid rgb(0, 68, 124);
+	border-collapse: collapse;
+	width: 60%;
+	}
+table.home td{
+	padding: 5px;
+	margin: 5px;
+	color: rgb(0, 68, 124);
+	text-align: center;
+}
+table.home th, table.home thead {
+	background-color: #dddddd;
+	color: rgb(212, 69, 0);
+}
+
+
+/* Forms Styles Section */
+input, textarea {
+  float: right;
+  clear: both;
+  width: 60%;
+}
+
+fieldset#businessInformation {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
+  
+}
+   
+p.projects {
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+img.TextWrap {
+	float:right;
+	margin:10px;
+	width:60px;
+}
