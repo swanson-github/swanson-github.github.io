@@ -73,7 +73,7 @@ section ul {
 
 /* Footer Styles Section */
 footer {
-	background: url("footer.png") repeat 0 0;
+	background: url('footer.png') repeat 0 0;
    position: fixed;
 	border: 1px Black solid;
    bottom: 0;
@@ -159,14 +159,37 @@ fieldset#businessInformation {
   border: 2px groove (internal value);
   
 }
+
+fieldset#commentsFldSet {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: none;
+  
+}
+
    
 p.projects {
 	font-size: 1.2em;
 	margin: 10px;
 }
 
-img.TextWrap {
+img.TextWrap1 {
 	float:right;
 	margin:10px;
 	width:60px;
+}
+
+img.TextWrap {
+ width: 80px;
+ float: right;
+ background: rgba(255,255,255, 0);
+ padding: 10px;
+ margin:10px;
+ clip-path: circle();
+ shape-outside: circle();
 }
